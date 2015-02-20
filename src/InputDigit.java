@@ -19,7 +19,7 @@ public class InputDigit {
         int numberOfTries = 8;
         System.out.println("Привет, давай познакомимся. Меня зовут Мегамозг! А тебя? (Введите свое имя): ");
         String playerName = getPlayerName.next();
-        System.out.printf("Уважаемый(-ая) %s, я загадал число от 1 до 100. Попробуй-ка его угадать. Но будь осторожен, количество попыток ограничего, всего %d!\n", playerName, numberOfTries);
+        System.out.printf("Уважаемый(-ая) %s, я загадал число от 1 до 100. Попробуй-ка его угадать. Осторожно, попыток всего %d!\n", playerName, numberOfTries);
         //System.out.println("Компьютер загадал: " + goal);//Строка для дебага. Потом убрать
 
         do {
@@ -53,6 +53,6 @@ public class InputDigit {
                     break;
                 }
             }
-        }while (numberOfTries > 0|| guess != goal) ;
+        }while (guess != goal) ;
     }
 }
