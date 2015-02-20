@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class InputDigit {
     static int goal;
     static int guess;
-    static int numberOfTries = 1;
     static Scanner keyboard = new Scanner(System.in);
     static Scanner newgame = new Scanner(System.in);
     public static void main(String[] args) {
@@ -15,8 +14,9 @@ public class InputDigit {
         }
         public static void playGame(){
         goal = (int) (Math.random() * 99 + 1);
+        int numberOfTries = 1;
 
-        System.out.println("Компьютер загадал: " + goal);//Строка для дебага. Потом убрать
+        //System.out.println("Компьютер загадал: " + goal);//Строка для дебага. Потом убрать
 
         do {
             System.out.println("Введите число от 1 до 100: ");
